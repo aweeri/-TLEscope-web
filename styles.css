@@ -1,0 +1,355 @@
+:root {
+    --bg-color: #0d1117;
+    --surface-color: #161b22;
+    --text-main: #c9d1d9;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --accent-hover: #3182ce;
+    --border: #30363d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links a {
+    margin: 0 1rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.badges img {
+    height: 28px;
+    margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 4rem 5%;
+    gap: 2rem;
+}
+
+.hero-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1.5;
+    min-width: 300px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Buttons */
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.2s;
+    text-align: center;
+    flex: 1;
+    min-width: 140px;
+}
+
+.btn.primary {
+    background-color: var(--accent);
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background-color: var(--accent-hover);
+}
+
+.btn.secondary {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border);
+    color: var(--text-main);
+}
+
+.btn.secondary:hover {
+    background-color: #21262d;
+}
+
+/* Sections */
+section {
+    padding: 4rem 5%;
+    border-top: 1px solid var(--border);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature-card {
+    background: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+}
+
+.feature-card h3 {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+    color: var(--text-muted);
+    margin-bottom: 1rem;
+}
+
+.feature-card img {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    margin-top: 1rem;
+}
+
+.card-images.dual {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card-images.dual img {
+    width: 48%;
+}
+
+/* Download Section */
+.download-section, .build-section {
+    text-align: center;
+}
+
+.download-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.download-box {
+    background: var(--surface-color);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.download-box h3 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.download-box p {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+}
+
+/* Build Section & Tabs */
+.tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.tab-btn {
+    background: var(--surface-color);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px 4px 0 0;
+    font-size: 1rem;
+}
+
+.tab-btn.active {
+    background: var(--bg-color);
+    color: var(--accent);
+    border-bottom: 1px solid var(--bg-color);
+}
+
+.tab-content {
+    display: none;
+    background: var(--bg-color);
+    border: 1px solid var(--border);
+    border-radius: 0 4px 4px 4px;
+    padding: 1.5rem;
+    margin-top: -1px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+pre {
+    background: #000;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+}
+
+code {
+    font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.9rem;
+    color: #e6edf3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 5%;
+    border-top: 1px solid var(--border);
+    background-color: var(--surface-color);
+    color: var(--text-muted);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .nav-links a {
+        margin: 0 0.5rem;
+    }
+
+    .hero {
+        padding: 2rem 5%;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .cta-buttons {
+        justify-content: center;
+    }
+
+    section {
+        padding: 2rem 5%;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-images.dual {
+        flex-direction: column;
+    }
+
+    .card-images.dual img {
+        width: 100%;
+    }
+
+    .download-links {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .download-box {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    .tabs {
+        flex-wrap: wrap;
+    }
+    
+    .tab-btn {
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
+}

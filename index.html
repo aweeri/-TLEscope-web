@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLEscope - Satellite Visualization Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">TLEscope</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#download">Download</a>
+            <a href="#build">Build from Source</a>
+        </div>
+        <div class="badges">
+            <a href="https://discord.gg/uDmNsuZR4W"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"></a>
+            <a href="https://ko-fi.com/aweeri"><img src="https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi"></a>
+            <a href="https://github.com/aweeri/TLEscope"><img src="https://img.shields.io/github/stars/aweeri/TLEscope?style=for-the-badge&color=yellow" alt="Stars"></a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Track the Cosmos with TLEscope</h1>
+            <p>A satellite visualization tool designed to transform Two-Line Element (TLE) sets into intuitive, interactive data. Track the past, current and future positions of orbital bodies across 3D and 2D environments.</p>
+            <div class="cta-buttons">
+                <a href="#download" class="btn primary">Download Now</a>
+                <a href="https://github.com/aweeri/TLEscope" class="btn secondary">View on GitHub</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="assets/banner.png" alt="TLEscope Interface">
+        </div>
+    </header>
+
+    <section id="features" class="features-section">
+        <h2>Features</h2>
+        <div class="features-grid">
+            <div class="feature-card text-only">
+                <h3>Dual-View Visualization</h3>
+                <p>Seamlessly toggle between an interactive 3D orbital space and a 2D projection featuring accurate satellite ground tracks.</p>
+            </div>
+            <div class="feature-card text-only">
+                <h3>Accurate Terminator Line</h3>
+                <p>Easily preview sunlight conditions, in 2D and 3D simulation environments.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Coverage Analysis</h3>
+                <p>Real-time rendering of Line-of-Sight (LOS) coverage areas and comprehensive orbital characteristics.</p>
+                <div class="card-images dual">
+                    <img src="https://github.com/user-attachments/assets/5cdf9629-5ae7-415e-8fa7-5ec3a2c953ef" alt="LOS Coverage 1">
+                    <img src="https://github.com/user-attachments/assets/5af3467e-abc9-4e57-910f-4bc179fb2808" alt="LOS Coverage 2">
+                </div>
+            </div>
+            <div class="feature-card">
+                <h3>TLE Data Integration</h3>
+                <p>Efficiently load and parse TLE data for individual satellites or entire constellations.</p>
+                <img src="https://github.com/user-attachments/assets/029451e5-0567-4af0-9c91-04d63636e131" alt="TLE Data">
+            </div>
+            <div class="feature-card">
+                <h3>For Nerds, By Nerds</h3>
+                <p>Equipped with tools designed for RF engineers, satellite operators, and enthusiasts wanting to know the next sunlit ISS pass.</p>
+                <img src="https://github.com/user-attachments/assets/45495333-5f00-4c6c-af66-9933264e5e80" alt="Advanced Tools">
+            </div>
+            <div class="feature-card text-only">
+                <h3>High Performance & Minimal Footprint</h3>
+                <p>Developed in pure C utilizing the Raylib framework. Offers high-performance rendering capable of handling thousands of satellites efficiently.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section">
+        <h2>Download</h2>
+        <p>Grab a portable zip from the Releases tab and extract it into a directory of your choice.</p>
+        <div class="download-links">
+            <div class="download-box">
+                <h3>Stable Release</h3>
+                <p>Properly versioned notable milestone builds. A stable and safe choice.</p>
+                <a href="https://github.com/aweeri/TLEscope/releases" class="btn primary">Download Stable</a>
+            </div>
+            <div class="download-box">
+                <h3>Nightly Build</h3>
+                <p>Up to date with the latest commits. Use at your own risk.</p>
+                <a href="https://github.com/aweeri/TLEscope/releases/tag/nightly" class="btn secondary">Download Nightly</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="build" class="build-section">
+        <h2>Building From Source</h2>
+        <p>If you prefer to compile TLEscope yourself, you can find the build instructions directly on GitHub.</p>
+        
+        <div class="download-links">
+            <div class="download-box">
+                <h3>Build Instructions</h3>
+                <p>Read the comprehensive guide on dependencies and compilation steps for Linux and Windows.</p>
+                <a href="https://github.com/aweeri/TLEscope?tab=readme-ov-file#building-from-source" class="btn secondary">View Build Guide</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>TLEscope is an evolving project. Bug reports and contributions are welcome via the <a href="https://github.com/aweeri/TLEscope/issues">issue tracker</a>.</p>
+        <p>Check the <a href="https://github.com/aweeri/TLEscope/blob/main/ROADMAP.md">Roadmap</a> for future plans.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
